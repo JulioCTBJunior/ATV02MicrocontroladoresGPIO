@@ -73,7 +73,15 @@ int main()
             printf("LED vermelho ligado.\n");
             break;
         case '4': // Ligar os três LEDs
+            light_led(LED_GREEN);
+            light_led(LED_BLUE);
+            light_led(LED_RED);
+            printf("Todos os LED's foram acessos.\n");
+            break;
         case '5': // Desligar todos os LEDs
+            turn_off_all();
+            printf("Todos os LED's foram desligados.\n");
+            break;
         case '6': // Acionar o buzzer
         default:
             printf("Comando inválido. Tente novamente.\n");
