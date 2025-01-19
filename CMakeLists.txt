@@ -46,7 +46,9 @@ pico_enable_stdio_usb(ATV02MicrocontroladoresGPIO 1)
 
 # Add the standard library to the build
 target_link_libraries(ATV02MicrocontroladoresGPIO
-        pico_stdlib)
+        pico_stdlib
+        pico_bootrom
+        )
 
 # Add the standard include files to the build
 target_include_directories(ATV02MicrocontroladoresGPIO PRIVATE

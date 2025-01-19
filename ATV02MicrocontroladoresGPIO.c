@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "pico/stdlib.h"
+#include <pico/bootrom.h>
+
 
 // Definição dos pinos
 #define LED_GREEN 11
@@ -83,6 +85,11 @@ int main()
             printf("Todos os LED's foram desligados.\n");
             break;
         case '6': // Acionar o buzzer
+            break;
+        case '7': //Sair do modo de execução e habilitar o modo de gravação via software (reboot)
+            printf("Modo de gravação via software habilitado.\n");
+            reset_usb_boot(0,0);
+            break;
         default:
             printf("Comando inválido. Tente novamente.\n");
             break;
