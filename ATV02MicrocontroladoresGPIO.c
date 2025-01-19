@@ -73,9 +73,9 @@ int main()
             printf("LED vermelho ligado.\n");
             break;
         case '4': // Ligar os três LEDs
-            light_led(LED_GREEN);
-            light_led(LED_BLUE);
-            light_led(LED_RED);
+            gpio_put(LED_GREEN, 1);
+            gpio_put(LED_BLUE, 1);
+            gpio_put(LED_RED, 1);
             printf("Todos os LED's foram acessos.\n");
             break;
         case '5': // Desligar todos os LEDs
