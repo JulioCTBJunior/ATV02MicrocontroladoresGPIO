@@ -1,8 +1,8 @@
 Projeto: Controle de LEDs e Buzzer com Raspberry Pi Pico
 
-LINK do projeto no youtube : https://youtu.be/a9hIOQ9TaXU?si=ujFMdZB-am3voq73
+LINK do projeto no youtube : <https://youtu.be/gUxEJu07rIQ>
 
-LINK DO WOKWI : https://wokwi.com/projects/420558697787440129
+LINK DO WOKWI : <https://wokwi.com/projects/420558697787440129>
 
 Descrição Geral
 
@@ -62,7 +62,7 @@ Modo de Gravação via USB
 
 reset_usb_boot(0, 0): Reinicia o microcontrolador e entra no modo de gravação, permitindo que um novo firmware seja carregado.
 
-Como Executar : 
+Como Executar :
 Conecte o hardware de acordo com as especificações dos pinos.
 Compile o código utilizando o SDK do Raspberry Pi Pico.
 Carregue o binário no microcontrolador.
@@ -74,19 +74,18 @@ Certifique-se de instalar e configurar corretamente o SDK do Raspberry Pi Pico a
 Utilize resistores adequados para proteger os LEDs.
 Para reprogramar o Pico, envie o comando 7 ou conecte o botão BOOTSEL ao reiniciar.
 
-Autores 
+Autores
 
 Julio Cesar Tertuliano
 
 Hercules Santos
 
-Ariel Fernando 
+Ariel Fernando
 
 Tarcio Santos
 
-Cintia Conceição 
+Cintia Conceição
 
 Danilo Larceda
 
 Projeto desenvolvido para fins educativos utilizando o Raspberry Pi Pico e sua biblioteca pico/stdlib.
-
