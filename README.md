@@ -1,5 +1,9 @@
 Projeto: Controle de LEDs e Buzzer com Raspberry Pi Pico
 
+LINK do projeto no youtube : https://youtu.be/a9hIOQ9TaXU?si=ujFMdZB-am3voq73
+
+LINK DO WOKWI : https://wokwi.com/projects/420558697787440129
+
 Descrição Geral
 
 Este projeto permite controlar três LEDs e um buzzer conectado a um microcontrolador Raspberry Pi Pico. O usuário pode enviar comandos através do terminal para:
@@ -28,11 +32,17 @@ Descrição dos Comandos
 Abaixo estão os comandos que podem ser enviados pelo terminal e suas respectivas ações:
 
 1 = Liga o LED verde e desliga os outros LEDs.
+
 2 = Liga o LED azul e desliga os outros LEDs.
+
 3 = Liga o LED vermelho e desliga os outros LEDs.
+
 4 = Liga todos os LEDs (verde, azul e vermelho) simultaneamente.
+
 5 = Desliga todos os LEDs.
+
 6 = Aciona o buzzer com uma frequência de 2 kHz por 2 segundos.
+
 7 = Reinicia o microcontrolador e habilita o modo de gravação via USB.
 
 Detalhes das Funções do Código
@@ -64,7 +74,19 @@ Certifique-se de instalar e configurar corretamente o SDK do Raspberry Pi Pico a
 Utilize resistores adequados para proteger os LEDs.
 Para reprogramar o Pico, envie o comando 7 ou conecte o botão BOOTSEL ao reiniciar.
 
-Autor
+Autores 
+
+Julio Cesar Tertuliano
+
+Hercules Santos
+
+Ariel Fernando 
+
+Tarcio Santos
+
+Cintia Conceição 
+
+Danilo Larceda
 
 Projeto desenvolvido para fins educativos utilizando o Raspberry Pi Pico e sua biblioteca pico/stdlib.
 
