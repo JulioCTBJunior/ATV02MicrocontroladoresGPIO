@@ -49,6 +49,20 @@ void setup()
     gpio_set_dir(BUZZER, GPIO_OUT);
 }
 
+// Função para acionar o buzzer em uma frequência específica
+void activate_buzzer_with_frequency(int frequency, int duration_ms)
+{
+    int delay = 1000000 / (2 * frequency); // Meio-período em microsegundos
+
+    for (int i = 0; i < (duration_ms * 1000) / (2 * delay); i++)
+    {
+        gpio_put(BUZZER, 1);
+        sleep_us(delay); // Liga por meio-período
+        gpio_put(BUZZER, 0);
+        sleep_us(delay); // Desliga por meio-período
+    }
+}
+
 int main()
 {
     stdio_init_all();
@@ -85,6 +99,9 @@ int main()
             printf("Todos os LED's foram desligados.\n");
             break;
         case '6': // Acionar o buzzer
+        printf("Buzzer ativado (2 kHz por 2 segundos).\n");
+            activate_buzzer_with_frequency(2000, 2000);
+            
             break;
         case '7': //Sair do modo de execução e habilitar o modo de gravação via software (reboot)
             printf("Modo de gravação via software habilitado.\n");
