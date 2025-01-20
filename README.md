@@ -1,6 +1,6 @@
 Projeto: Controle de LEDs e Buzzer com Raspberry Pi Pico
 
-LINK do projeto no youtube : <https://youtu.be/gUxEJu07rIQ>
+LINK do projeto no youtube : <https://youtu.be/a9hIOQ9TaXU>
 
 LINK DO WOKWI : <https://wokwi.com/projects/420558697787440129>
 
